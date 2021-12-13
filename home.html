@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>1</title>
+    <style>
+        .container {
+            height: 275px;
+            width: 300px;
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3), -5px -5px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h3 {
+            color: white;
+            background-color: purple;
+            font-size: 25px;
+        }
+
+        .demo {
+            background-color: white;
+            color: black;
+        }
+
+        p {
+            font-style: italic;
+            color: gray;
+        }
+
+        .rating {
+            color: orangered;
+        }
+
+        div.section:hover div.container h3,
+        div.section:hover div.demo,
+        div.section:hover div.container {
+            background-color: black;
+            position: absolute;
+        }
+
+        .hoverWrapper:hover #hoverShow1 {
+            display: block;
+        }
+
+        .hoverWrapper #hoverShow1 {
+            display: none;
+            position: absolute;
+            background-color: black;
+            width: 300px;
+            height: 275px;
+        }
+        .hoverWrapper #hoverShow1 p{
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hoverWrapper">
+
+        <div class="section">
+            <div class="container">
+                <h3>DEVOPS CERTIFIACTION TRAINING COURSE</h3>
+                <div class="demo">
+                    <h2>
+                        DevOps Certification Training Course
+                    </h2>
+                    <p>Reviews</p>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="hoverShow1">
+                <p>Next Batch</p>
+                <p>In 0 days- 13 December</p>
+                <button>View Details</button>
+        </div>
+    </div>
+</body>
+
+</html>
